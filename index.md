@@ -20,6 +20,7 @@ I am particularly interested in systems that answer not only “What does the mo
   <li>Surgical Video Understanding</li>
   <li>Surgical Video Question Answering</li>
   <li>Scene Graphs &amp; Structured Surgical Knowledge</li>
+  <li>Trustworthy Surgical AI</li>
 </ul>
 
 ## Publications
