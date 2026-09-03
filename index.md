@@ -25,7 +25,7 @@ I am particularly interested in systems that answer not only “What does the mo
 
 ## Publications
 
-{% include publication-list.html show_years=false %}
+{% include publication-list.html %}
 
 ## Teaching Assistant
 

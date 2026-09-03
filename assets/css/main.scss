@@ -67,13 +67,12 @@ ul { padding-left: 1.25rem; }
 .interest-grid { display: block; margin: .8rem 0; }
 .interest-grid li + li { margin-top: .35rem; }
 .interest-grid li::marker { color: var(--accent); }
-.publication-year { font-family: inherit; font-size: 1.18rem; border: 0; color: var(--muted); margin: 2rem 0 .7rem; padding: 0; }
 .publication { padding: 0 0 1.45rem; margin-bottom: 1.45rem; border-bottom: 1px solid var(--line); }
+.publication .publication-date { color: var(--ink); margin: 0 0 .28rem; }
 .publication h3 { margin: 0 0 .38rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.06rem; }
 .publication p { margin: .18rem 0; font-size: .94rem; }
 .publication .authors { color: #3d4650; }
 .publication .venue { color: var(--muted); font-style: italic; }
-.publication .publication-date { color: var(--muted); }
 .publication-links { display: flex; gap: .5rem; margin-top: .65rem; }
 .publication-links a { display: inline-block; border: 1px solid #bdcbd5; border-radius: 3px; padding: .16rem .5rem; text-decoration: none; font-size: .78rem; }
 .news-list { list-style: none; padding: 0; }

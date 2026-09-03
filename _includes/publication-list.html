@@ -1,13 +1,10 @@
 <div class="publication-list">
-  {% assign current_year = "" %}
   {% for publication in site.data.publications %}
-    {% capture pub_year %}{{ publication.year }}{% endcapture %}
-    {% if include.show_years and pub_year != current_year %}<h2 class="publication-year">{{ publication.year }}</h2>{% assign current_year = pub_year %}{% endif %}
     <article class="publication">
+      <p class="publication-date"><strong>[{{ publication.year }}]</strong></p>
       <h3>{{ publication.title }}</h3>
       <p class="authors">{{ publication.authors_before }}<strong>TMT Vu</strong>{{ publication.authors_after }}.</p>
       <p class="venue">{{ publication.venue }}.</p>
-      <p class="publication-date">{{ publication.year }}</p>
       {% if publication.paper != "" or publication.arxiv != "" or publication.code != "" or publication.bibtex != "" %}
       <div class="publication-links">
         {% if publication.paper != "" %}<a href="{{ publication.paper }}">Paper</a>{% endif %}
