@@ -1,4 +1,78 @@
 {% assign p = site.data.profile %}
+
+<aside class="sidebar" aria-label="Profile">
+
+  {% if p.profile_image != "" %}
+    <img
+      class="profile-image"
+      src="{{ p.profile_image | relative_url }}"
+      alt="Portrait of {{ p.name }}"
+    >
+  {% else %}
+    <img
+      class="profile-image"
+      src="{{ '/images/avatar-placeholder.svg' | relative_url }}"
+      alt="Profile image placeholder"
+    >
+  {% endif %}
+
+  <h1 class="profile-name">{{ p.name }}</h1>
+
+  <p class="profile-role">
+    {{ p.title }}
+  </p>
+
+  <div class="profile-info">
+
+    {% if p.location != "" %}
+    <div class="profile-info-item">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>{{ p.location }}</span>
+    </div>
+    {% endif %}
+
+    {% if p.affiliation_short != "" %}
+    <div class="profile-info-item">
+      <i class="fa-solid fa-building-columns"></i>
+      <span>{{ p.affiliation_short }}</span>
+    </div>
+    {% endif %}
+
+    {% if p.email != "" %}
+    <div class="profile-info-item">
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:{{ p.email }}">Email</a>
+    </div>
+    {% endif %}
+
+    {% if p.github != "" %}
+    <div class="profile-info-item">
+      <i class="fa-brands fa-github"></i>
+      <a href="{{ p.github }}" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    {% endif %}
+
+    {% if p.linkedin != "" %}
+    <div class="profile-info-item">
+      <i class="fa-brands fa-linkedin"></i>
+      <a href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    {% endif %}
+
+    {% if p.google_scholar != "" %}
+    <div class="profile-info-item">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <a href="{{ p.google_scholar }}" target="_blank" rel="noopener">
+        Google Scholar
+      </a>
+    </div>
+    {% endif %}
+
+  </div>
+
+</aside>
+
+<!-- {% assign p = site.data.profile %}
 <aside class="sidebar" aria-label="Profile">
   {% if p.profile_image != "" %}
     <img class="profile-image" src="{{ p.profile_image | relative_url }}" alt="Portrait of {{ p.name }}">
@@ -17,4 +91,4 @@
     {% if p.linkedin != "" %}<a href="{{ p.linkedin }}" rel="me">LinkedIn</a>{% else %}<span title="Add LinkedIn URL in _data/profile.yml">LinkedIn</span>{% endif %}
     <a href="{{ p.google_scholar }}" rel="me">Google Scholar</a>
   </div>
-</aside>
+</aside> -->

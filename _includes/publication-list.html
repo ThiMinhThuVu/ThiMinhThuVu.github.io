@@ -1,8 +1,7 @@
 <div class="publication-list">
   {% for publication in site.data.publications %}
     <article class="publication">
-      <p class="publication-date"><strong>[{{ publication.year }}]</strong></p>
-      <h3>{{ publication.title }}</h3>
+      <h3><strong class="publication-date">[{{ publication.year }}]</strong> {{ publication.title }}</h3>
       <p class="authors">{{ publication.authors_before }}<strong>TMT Vu</strong>{{ publication.authors_after }}.</p>
       <p class="venue">{{ publication.venue }}.</p>
       {% if publication.paper != "" or publication.arxiv != "" or publication.code != "" or publication.bibtex != "" %}

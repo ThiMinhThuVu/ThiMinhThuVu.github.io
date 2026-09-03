@@ -31,7 +31,7 @@ I am particularly interested in systems that answer not only “What does the mo
 
 {% for item in site.data.teaching %}
 <div class="teaching-entry">
-  <p>[{{ item.term }}] {{ item.course_code }} - {{ item.course_title }} @ {{ item.unit }} - Instructor: {{ item.instructor }}</p>
+  <p><strong>[{{ item.term }}]</strong> {{ item.course_code }} - {{ item.course_title }} @ {{ item.unit }} - Instructor: <a href="{{ item.instructor_url }}">{{ item.instructor }}</a></p>
 </div>
 {% endfor %}
 
