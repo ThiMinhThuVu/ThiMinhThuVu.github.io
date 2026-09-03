@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <!-- Add a favicon later: <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}"> -->
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {% include header.html %}
+  <div class="page-shell">
+    {% include sidebar.html %}
+    <main id="main-content" class="main-content">{{ content }}</main>
+  </div>
+  <footer>© {{ "now" | date: "%Y" }} {{ site.data.profile.name }} · Built with Jekyll and hosted on GitHub Pages.</footer>
+  <script>
+    const button = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#site-nav');
+    button.addEventListener('click', () => {
+      const open = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open');
+    });
+  </script>
+</body>
+</html>
+

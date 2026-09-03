@@ -1,0 +1,27 @@
+title: "Thi-Minh-Thu Vu"
+description: "Academic website of Thi-Minh-Thu Vu, a graduate researcher in AI for healthcare working on surgical AI, biomedical image analysis, and multimodal medical AI."
+url: "https://ThiMinhThuVu.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Ho_Chi_Minh
+
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

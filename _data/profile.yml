@@ -1,0 +1,14 @@
+# Edit personal details here; pages and the sidebar read from this file.
+name: "Thi-Minh-Thu Vu"
+native_name: "Vũ Thị Minh Thư"
+title: "Graduate Researcher in AI for Healthcare"
+email: "vuthiminhthu04@gmail.com"
+github: "https://github.com/ThiMinhThuVu"
+linkedin: "https://www.linkedin.com/in/thu-vu-minh-25b85b247/"
+google_scholar: "https://scholar.google.com/citations?user=Zwbvyq0AAAAJ"
+location: "Hanoi, Vietnam"
+institution: "VinUniversity"
+affiliations:
+  - "VinUniversity"
+  - "VinUni-Illinois Smart Health Center (VISHC)"
+profile_image: "/images/avatar.jpg"

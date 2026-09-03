@@ -1,0 +1,9 @@
+- date: "Sep. 2026"
+  text: "Working on semantic segmentation and safety-aware surgical scene understanding for the TIGER Surgical AI Challenge 2026."
+- date: "Aug. 2026"
+  text: "Developed and evaluated temporal scene-graph models for surgical video understanding."
+- date: "Aug. 2026"
+  text: "Developed a zero-shot Surgical VideoQA pipeline using multimodal vision-language models."
+- date: "Aug. 2026"
+  text: "Started developing a safety-aware framework for identifying potentially clinically consequential segmentation errors using model confidence, anatomical context, and structured knowledge."
+

@@ -1,0 +1,28 @@
+- year: 2026
+  title: "UETQuintet at BioCreative IX--MedHopQA: Enhancing Biomedical QA with Selective Multi-hop Reasoning and Contextual Retrieval"
+  authors_before: "Quoc-An Nguyen, "
+  authors_after: ", Binh Duc Nguyen, Duc Quang Minh Tran, Hoang-Quynh Le"
+  venue: "arXiv preprint arXiv:2601.06974, 2026"
+  arxiv: "https://arxiv.org/abs/2601.06974"
+  paper: ""
+  code: ""
+  bibtex: ""
+- year: 2025
+  title: "HERF: Hybrid Evidence Retrieval Framework for Entity-Centric Question Answering"
+  authors_before: ""
+  authors_after: ", Quoc-An Nguyen, Binh Duc Nguyen, Duc Quang Minh Tran, Hoang-Quynh Le"
+  venue: "International Symposium on Information and Communication Technology (SoICT), pp. 233–246, 2025"
+  arxiv: ""
+  paper: ""
+  code: ""
+  bibtex: ""
+- year: 2025
+  title: "CiteArXiv: A Citation-enriched Dataset and Heterogeneous Graph-based Model for Scientific Articles Summarization"
+  authors_before: "Quoc-An Nguyen, Xuan-Hieu Le, "
+  authors_after: ", Hoang-Quynh Le"
+  venue: "Companion Proceedings of the ACM Web Conference 2025, pp. 3084–3087"
+  arxiv: ""
+  paper: ""
+  code: ""
+  bibtex: ""
+
