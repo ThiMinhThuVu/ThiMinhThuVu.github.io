@@ -26,42 +26,42 @@
 
     {% if p.location != "" %}
     <div class="profile-info-item">
-      <i class="fa-solid fa-location-dot"></i>
+      {% include profile-icon.html name="location" %}
       <span>{{ p.location }}</span>
     </div>
     {% endif %}
 
     {% if p.affiliation_short != "" %}
     <div class="profile-info-item">
-      <i class="fa-solid fa-building-columns"></i>
+      {% include profile-icon.html name="institution" %}
       <span>{{ p.affiliation_short }}</span>
     </div>
     {% endif %}
 
     {% if p.email != "" %}
     <div class="profile-info-item">
-      <i class="fa-solid fa-envelope"></i>
+      {% include profile-icon.html name="email" %}
       <a href="mailto:{{ p.email }}">Email</a>
     </div>
     {% endif %}
 
     {% if p.github != "" %}
     <div class="profile-info-item">
-      <i class="fa-brands fa-github"></i>
+      {% include profile-icon.html name="github" %}
       <a href="{{ p.github }}" target="_blank" rel="noopener">GitHub</a>
     </div>
     {% endif %}
 
     {% if p.linkedin != "" %}
     <div class="profile-info-item">
-      <i class="fa-brands fa-linkedin"></i>
+      {% include profile-icon.html name="linkedin" %}
       <a href="{{ p.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     {% endif %}
 
     {% if p.google_scholar != "" %}
     <div class="profile-info-item">
-      <i class="fa-solid fa-graduation-cap"></i>
+      {% include profile-icon.html name="scholar" %}
       <a href="{{ p.google_scholar }}" target="_blank" rel="noopener">
         Google Scholar
       </a>

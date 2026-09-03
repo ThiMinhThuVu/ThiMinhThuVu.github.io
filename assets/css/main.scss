@@ -355,14 +355,23 @@ a:hover {
 
 /* Icons */
 
-.profile-info-item i {
+.profile-icon {
   width: 24px;
-
-  text-align: center;
-
-  font-size: 1.05rem;
-
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: #474d52;
+}
+
+.profile-icon svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 
@@ -581,6 +590,15 @@ ul {
 
 .publication .publication-date {
   color: var(--ink);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .publication h3 {
@@ -834,10 +852,9 @@ footer {
     column-gap: .65rem;
   }
 
-  .profile-info-item i {
-    font-size: 1rem;
-
+  .profile-icon {
     width: 23px;
+    height: 23px;
   }
 
 
