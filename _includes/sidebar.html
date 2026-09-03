@@ -6,7 +6,6 @@
     <img class="profile-image" src="{{ '/images/avatar-placeholder.svg' | relative_url }}" alt="Profile image placeholder">
   {% endif %}
   <h1>{{ p.name }}</h1>
-  <p class="native-name" lang="vi">{{ p.native_name }}</p>
   <p class="role">{{ p.title }}</p>
   <ul class="profile-meta">
     {% for affiliation in p.affiliations %}<li>{{ affiliation }}</li>{% endfor %}

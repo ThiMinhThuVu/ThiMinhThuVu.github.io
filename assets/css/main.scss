@@ -47,7 +47,6 @@ a:hover { color: var(--accent-dark); }
 .sidebar { align-self: start; position: sticky; top: 2rem; text-align: center; }
 .profile-image { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 1.25rem; border: 1px solid var(--line); }
 .sidebar h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.5rem; line-height: 1.25; letter-spacing: -.02em; }
-.native-name { color: var(--muted); margin: .22rem 0 .85rem; }
 .role { margin: 0 0 .85rem; font-size: .96rem; }
 .profile-meta { list-style: none; padding: 0; margin: 0 0 1.2rem; color: var(--muted); font-size: .88rem; line-height: 1.55; }
 .profile-meta li + li { margin-top: .25rem; }
@@ -77,9 +76,7 @@ ul { padding-left: 1.25rem; }
 .publication-links a { display: inline-block; border: 1px solid #bdcbd5; border-radius: 3px; padding: .16rem .5rem; text-decoration: none; font-size: .78rem; }
 .news-list { list-style: none; padding: 0; }
 .news-list li { margin-bottom: .75rem; }
-.teaching-entry h3 { margin-bottom: .25rem; }
 .teaching-entry p { color: var(--muted); }
-.teaching-entry p strong { color: var(--ink); }
 .status-label { display: inline-block; color: var(--accent-dark); background: var(--soft); border: 1px solid var(--line); padding: .12rem .5rem; margin: -.1rem 0 .75rem; border-radius: 2px; font-size: .76rem; font-weight: 650; text-transform: uppercase; letter-spacing: .04em; }
 footer { border-top: 1px solid var(--line); max-width: var(--max-width); margin: 0 auto; padding: 1.5rem; color: var(--muted); text-align: center; font-size: .8rem; }
 
@@ -93,7 +90,7 @@ footer { border-top: 1px solid var(--line); max-width: var(--max-width); margin:
   .sidebar { position: static; text-align: left; display: grid; grid-template-columns: 92px 1fr; column-gap: 1.15rem; margin-bottom: 2.7rem; padding-bottom: 2rem; border-bottom: 1px solid var(--line); }
   .profile-image { width: 92px; height: 92px; grid-row: 1 / span 4; margin: 0; }
   .sidebar h1 { font-size: 1.3rem; align-self: end; }
-  .native-name, .role { margin: .1rem 0; }
+  .role { margin: .1rem 0; }
   .profile-meta, .social-links { grid-column: 1 / -1; text-align: left; justify-content: flex-start; }
   .profile-meta { margin-top: 1rem; }
   h1 { font-size: 1.75rem; }

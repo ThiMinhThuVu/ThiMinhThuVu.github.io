@@ -6,4 +6,7 @@
   text: "Developed a zero-shot Surgical VideoQA pipeline using multimodal vision-language models."
 - date: "Aug. 2026"
   text: "Started developing a safety-aware framework for identifying potentially clinically consequential segmentation errors using model confidence, anatomical context, and structured knowledge."
-
+- date: "Jun.–Jul. 2026"
+  text: "Received Second Prize for a poster presentation at the NUS Young Fellowship."
+- date: "Jun. 2025"
+  text: "Received Second Prize (2nd Place – Track 1: MedHopQA) in the international competition on Large Language Models for Clinical and Biomedical NLP, BioCreative IX at IJCAI 2025."

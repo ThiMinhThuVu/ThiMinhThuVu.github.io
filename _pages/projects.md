@@ -1,7 +1,7 @@
 ---
 title: Projects
 permalink: /projects/
-description: "Research projects by Thi-Minh-Thu Vu in surgical AI and multimodal medical AI."
+description: "Research projects by Thu T.M Vu in surgical AI and multimodal medical AI."
 ---
 
 # Projects
@@ -30,4 +30,3 @@ Reproduction and extension of scene-graph-based surgical video models on the End
 <p class="status-label">Ongoing Research</p>
 
 Development of multimodal surgical video question-answering pipelines. The current direction combines surgical-aware temporal reasoning, evidence retrieval, temporal grounding, and multimodal reasoning so that answers can be connected to supporting moments in a procedure.
-

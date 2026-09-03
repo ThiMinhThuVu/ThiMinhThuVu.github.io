@@ -1,4 +1,4 @@
-# Academic website of Thi-Minh-Thu Vu
+# Academic website of Thu T.M Vu
 
 A lightweight, responsive academic website built with Jekyll for GitHub Pages. Personal metadata is centralized in `_data/profile.yml`; publications and news are maintained as structured YAML data.
 
