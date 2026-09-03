@@ -6,13 +6,11 @@ permalink: /
 
 ## About
 
-Hi! I’m Thu T.M Vu, a graduate researcher in AI for healthcare. My research focuses on Surgical AI, Biomedical Image Analysis, and Multimodal Medical AI.
+Hi! I’m Thu T.M Vu, a graduate student at VNU University of Engineering and Technology (VNU-UET). My research focuses on Surgical AI, Biomedical Image Analysis, and Multimodal Medical AI.
 
-My earlier work explored question answering, evidence retrieval, scientific document understanding, and biomedical multi-hop reasoning. I am now extending these interests to surgical video understanding: enabling AI systems to interpret surgical scenes, reason over temporal and anatomical context, retrieve supporting visual evidence, and make clinically reliable predictions.
+My earlier work explored question answering, evidence retrieval, scientific document understanding, and biomedical multi-hop reasoning. I am now extending these interests to surgical video understanding, with an emphasis on interpreting surgical scenes, reasoning over temporal and anatomical context, and retrieving supporting visual evidence.
 
-I am particularly interested in systems that answer not only “What does the model predict?” but also “What visual evidence supports this prediction, why did the surgical event occur, and can the prediction be trusted clinically?”
-
-<p class="research-path" aria-label="Research trajectory"><span>Evidence Retrieval</span><b>→</b><span>Question Answering</span><b>→</b><span>Biomedical QA</span><b>→</b><span>Multimodal Reasoning</span><b>→</b><span>Surgical Video Understanding</span><b>→</b><span>Trustworthy Surgical AI</span></p>
+I am particularly interested in evidence-grounded and trustworthy systems that connect predictions with the visual evidence supporting them.
 
 ## Research Interests
 

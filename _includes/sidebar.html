@@ -71,24 +71,3 @@
   </div>
 
 </aside>
-
-<!-- {% assign p = site.data.profile %}
-<aside class="sidebar" aria-label="Profile">
-  {% if p.profile_image != "" %}
-    <img class="profile-image" src="{{ p.profile_image | relative_url }}" alt="Portrait of {{ p.name }}">
-  {% else %}
-    <img class="profile-image" src="{{ '/images/avatar-placeholder.svg' | relative_url }}" alt="Profile image placeholder">
-  {% endif %}
-  <h1>{{ p.name }}</h1>
-  <p class="role">{{ p.title }}</p>
-  <ul class="profile-meta">
-    {% for affiliation in p.affiliations %}<li>{{ affiliation }}</li>{% endfor %}
-    <li>{{ p.location }}</li>
-  </ul>
-  <div class="social-links" aria-label="Profile links">
-    {% if p.email != "" %}<a href="mailto:{{ p.email }}">Email</a>{% else %}<span title="Add email in _data/profile.yml">Email</span>{% endif %}
-    {% if p.github != "" %}<a href="{{ p.github }}" rel="me">GitHub</a>{% else %}<span title="Add GitHub URL in _data/profile.yml">GitHub</span>{% endif %}
-    {% if p.linkedin != "" %}<a href="{{ p.linkedin }}" rel="me">LinkedIn</a>{% else %}<span title="Add LinkedIn URL in _data/profile.yml">LinkedIn</span>{% endif %}
-    <a href="{{ p.google_scholar }}" rel="me">Google Scholar</a>
-  </div>
-</aside> -->
