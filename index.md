@@ -38,6 +38,6 @@ I am particularly interested in systems that answer not only “What does the mo
 
 <ul class="news-list">
 {% for item in site.data.news %}
-  <li>[{{ item.date }}] {{ item.text }}</li>
+  <li><strong>[{{ item.date }}]</strong> {{ item.text }}</li>
 {% endfor %}
 </ul>

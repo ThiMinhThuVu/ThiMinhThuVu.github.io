@@ -64,7 +64,8 @@ p { margin: 0 0 1rem; }
 ul { padding-left: 1.25rem; }
 .research-path { display: flex; align-items: center; flex-wrap: wrap; gap: .45rem .65rem; color: var(--accent-dark); padding: 1rem 1.1rem; margin: 1.8rem 0 0; background: var(--soft); border-left: 3px solid var(--accent); font-size: .9rem; line-height: 1.45; }
 .research-path b { color: #93a1ad; }
-.interest-grid { display: grid; grid-template-columns: 1fr; gap: .35rem; margin: .8rem 0; }
+.interest-grid { display: block; margin: .8rem 0; }
+.interest-grid li + li { margin-top: .35rem; }
 .interest-grid li::marker { color: var(--accent); }
 .publication-year { font-family: inherit; font-size: 1.18rem; border: 0; color: var(--muted); margin: 2rem 0 .7rem; padding: 0; }
 .publication { padding: 0 0 1.45rem; margin-bottom: 1.45rem; border-bottom: 1px solid var(--line); }
@@ -95,7 +96,7 @@ footer { border-top: 1px solid var(--line); max-width: var(--max-width); margin:
   .profile-meta, .social-links { grid-column: 1 / -1; text-align: left; justify-content: flex-start; }
   .profile-meta { margin-top: 1rem; }
   h1 { font-size: 1.75rem; }
-  .interest-grid { grid-template-columns: 1fr; gap: .2rem; }
+  .interest-grid li + li { margin-top: .2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
