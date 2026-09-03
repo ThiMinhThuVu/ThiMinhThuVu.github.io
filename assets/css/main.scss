@@ -664,7 +664,15 @@ ul {
    ========================= */
 
 .teaching-entry p {
-  color: var(--muted);
+  color: var(--ink);
+}
+
+.teaching-entry a {
+  color: inherit;
+}
+
+.teaching-entry a:hover {
+  color: var(--accent);
 }
 
 
