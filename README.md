@@ -34,7 +34,6 @@ The configuration uses an empty `baseurl`, which is correct for a user site. If 
 - **Publications:** edit `_data/publications.yml`. Leave unknown link fields empty; buttons appear only for non-empty URLs.
 - **News:** edit `_data/news.yml`.
 - **Teaching:** edit `_data/teaching.yml`.
-- **Research and projects:** edit `_pages/research.md` and `_pages/projects.md`.
 - **Home page:** edit `index.md`.
 - **Colors and layout:** edit `assets/css/main.scss`.
 - **Favicon:** add an icon under `images/` and uncomment the favicon line in `_layouts/default.html`.
@@ -47,7 +46,7 @@ The configuration uses an empty `baseurl`, which is correct for a user site. If 
 ├── _data/                 # profile, navigation, publications, teaching, news
 ├── _includes/             # reusable header, sidebar, publication list
 ├── _layouts/default.html
-├── _pages/                # research, publications, projects
+├── _pages/                # publications
 ├── assets/css/main.scss
 ├── images/                # avatar fallback and future profile photo
 ├── index.md
