@@ -68,6 +68,13 @@
     </div>
     {% endif %}
 
+    {% if p.orcid and p.orcid != "" %}
+    <div class="profile-info-item">
+      {% include profile-icon.html name="orcid" %}
+      <a href="{{ p.orcid }}" target="_blank" rel="noopener">ORCID</a>
+    </div>
+    {% endif %}
+
   </div>
 
 </aside>
