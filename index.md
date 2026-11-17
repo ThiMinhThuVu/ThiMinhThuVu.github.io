@@ -43,11 +43,14 @@ GPA: **3.8/4.0**, top 8% of cohort.
 ### Research Experience
 
 - [2026.06 - Present] **Research Assistant — VinUni-Illinois Smart Health Center, VinUniversity**<br>
-  Advised by Dr. [Huy-Hieu Pham](https://huyhieupham.github.io/). Anatomical segmentation, surgical scene understanding, and scene graphs for knowledge-enhanced visual question answering.
+  ◇ Advised by Dr. [Huy-Hieu Pham](https://huyhieupham.github.io/).<br>
+  • Anatomical segmentation, surgical scene understanding, and scene graphs for knowledge-enhanced visual question answering.
 - [2026.06 - Present] **Research Associate — [PASSIO Lab](https://www.passiolab.com/), North Carolina A&T State University, USA**<br>
-  Advised by Dr. [Phat K. Huynh](https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi). Deep learning and temporal modeling for phase recognition in cardiac surgery videos.
+  ◇ Advised by Dr. [Phat K. Huynh](https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi).<br>
+  • Deep learning and temporal modeling for phase recognition in cardiac surgery videos.
 - [2023.09 - 2026.06] **Research Assistant — Data Science and Knowledge Technology Laboratory**<br>
-  Advised by Dr. [Hoang-Quynh Le](https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi). Heterogeneous graphs for citation-aware summarization and retrieval-augmented pipelines for multi-hop biomedical question answering.
+  ◇ Advised by Dr. [Hoang-Quynh Le](https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi).<br>
+  • Heterogeneous graphs for citation-aware summarization and retrieval-augmented pipelines for multi-hop biomedical question answering.
 
 ### Teaching Experience
 

@@ -112,7 +112,7 @@
   --accent-dark: #183f5c;
   --line: #dfe4e8;
   --soft: #f5f7f8;
-  --max-width: 1440px;
+  --max-width: 1480px;
 }
 
 * {
@@ -173,9 +173,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: calc(92% - 2cm);
   max-width: var(--max-width);
   margin: auto;
-  padding: 0 1.5rem;
+  padding: 0;
 }
 
 .site-title {
@@ -230,12 +231,13 @@ a:hover {
 .page-shell {
   display: grid;
   grid-template-columns: 270px minmax(0, 1fr);
-  gap: 2.5rem;
+  gap: 3rem;
 
+  width: calc(92% - 2cm);
   max-width: var(--max-width);
   margin: 0 auto;
 
-  padding: 3.4rem 1rem 5rem;
+  padding: 3.4rem 0 5rem;
 }
 
 
@@ -732,9 +734,11 @@ footer {
    MOBILE
    ========================= */
 
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
 
   .site-header {
+    width: 100%;
+    padding: 0 1.25rem;
     height: 60px;
 
     position: relative;
@@ -782,6 +786,7 @@ footer {
   /* Main page */
 
   .page-shell {
+    width: 100%;
     display: block;
 
     padding: 2rem 1.25rem 4rem;
