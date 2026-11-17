@@ -56,11 +56,13 @@ GPA: **3.8/4.0**, top 8% of cohort.
 
 [2026.07 - Present] **Teaching Assistant — College of Engineering & Computer Science, VinUniversity.**
 
+<ul>
 {% for item in site.data.teaching %}
-<div class="teaching-entry">
-  <p><strong>[{{ item.term }}]</strong> {{ item.course_code }} - {{ item.course_title }} @ {{ item.unit }}<br>Instructor: <a href="{{ item.instructor_url }}">{{ item.instructor }}</a></p>
-</div>
+  <li class="teaching-entry">
+    <p><strong>[{{ item.term }}]</strong> {{ item.course_code }} - {{ item.course_title }} @ {{ item.unit }}<br>◇ Instructor: <a href="{{ item.instructor_url }}">{{ item.instructor }}</a></p>
+  </li>
 {% endfor %}
+</ul>
 
 ### Industry Experience
 
