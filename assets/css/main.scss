@@ -257,24 +257,25 @@ a:hover {
 
 /* Profile image */
 
-.profile-image {
+ .profile-image {
   width: 205px;
   height: 205px;
-
   display: block;
-
   margin: 0 auto 1.4rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
+}
 
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-
-  border-radius: 50%;
-
-  border: 1px solid var(--line);
-
-  padding: 3px;
-
-  background: #fff;
+  transform: scale(2.5);
+  transform-origin: 32.5% 62%;
 }
 
 

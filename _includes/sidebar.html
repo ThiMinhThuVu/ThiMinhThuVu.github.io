@@ -2,19 +2,19 @@
 
 <aside class="sidebar" aria-label="Profile">
 
+  <div class="profile-image">
   {% if p.profile_image != "" %}
     <img
-      class="profile-image"
       src="{{ p.profile_image | relative_url }}"
       alt="Portrait of {{ p.name }}"
     >
   {% else %}
     <img
-      class="profile-image"
       src="{{ '/images/avatar-placeholder.svg' | relative_url }}"
       alt="Profile image placeholder"
     >
   {% endif %}
+  </div>
 
   <h1 class="profile-name">{{ p.name }}</h1>
 
