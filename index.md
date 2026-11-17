@@ -21,10 +21,6 @@ I am particularly interested in systems that answer not only “What does the mo
   <li>Trustworthy AI</li>
 </ul>
 
-## Education
-
-[2022.09 - 2026.06] **B.Sc. in Computer Science**, [Vietnam National University, University of Engineering and Technology (VNU-UET)](https://uet.vnu.edu.vn/en/). GPA: **3.8/4.0**, top 8% of cohort.
-
 <h2 id="news">🔥 News</h2>
 
 <ul class="news-list">
@@ -37,12 +33,16 @@ I am particularly interested in systems that answer not only “What does the mo
 
 {% include publication-list.html %}
 
+## Education
+
+[2022.09 - 2026.06] **B.Sc. in Computer Science**, [Vietnam National University, University of Engineering and Technology (VNU-UET)](https://uet.vnu.edu.vn/en/). GPA: **3.8/4.0**, top 8% of cohort.
+
 ## Experience
 
 ### Research Experience
 
 - [2026.06 - present] **Research Assistant — VinUni-Illinois Smart Health Center, VinUniversity**. Advised by Dr. [Huy-Hieu Pham](https://huyhieupham.github.io/). Anatomical segmentation, surgical scene understanding, and scene graphs for knowledge-enhanced visual question answering.
-- [2026.06 - present] **Research Associate — [PASSIO Lab](https://www.passiolab.com/), North Carolina A&T State University**. Advised by Dr. [Phat K. Huynh](https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi). Deep learning and temporal modeling for phase recognition in cardiac surgery videos.
+- [2026.06 - present] **Research Associate — [PASSIO Lab](https://www.passiolab.com/), North Carolina A&T State University, USA**. Advised by Dr. [Phat K. Huynh](https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi). Deep learning and temporal modeling for phase recognition in cardiac surgery videos.
 - [2023.09 - 2026.06] **Research Assistant — Data Science and Knowledge Technology Laboratory**. Advised by Dr. [Hoang-Quynh Le](https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi). Heterogeneous graphs for citation-aware summarization and retrieval-augmented pipelines for multi-hop biomedical question answering.
 
 ### Teaching Experience
