@@ -66,8 +66,8 @@ GPA: **3.8/4.0**, top 8% of cohort.
 
 ### Industry Experience
 
-[2025.10 - 2025.12] **AI Engineer Intern — R&D Department, MBBank**<br>
-Developed information retrieval for enterprise question-answering and Text-to-SQL chatbots, including schema graph retrieval, prompt engineering, and entity extraction.
+- [2025.10 - 2025.12] **AI Engineer Intern — R&D Department, MBBank**<br>
+  ◦ Developed information retrieval for enterprise question-answering and Text-to-SQL chatbots, including schema graph retrieval, prompt engineering, and entity extraction.
 
 ## Honors and Awards
 

@@ -168,6 +168,10 @@ a:hover {
    ========================= */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #fff;
   height: 68px;
   border-bottom: 1px solid var(--line);
   display: flex;
@@ -741,7 +745,7 @@ footer {
     padding: 0 1.25rem;
     height: 60px;
 
-    position: relative;
+    position: sticky;
   }
 
   .nav-toggle {
@@ -909,4 +913,9 @@ footer {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Keep section headings visible below the sticky navigation. */
+.main-content [id] {
+  scroll-margin-top: 84px;
 }
