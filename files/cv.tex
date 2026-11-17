@@ -1,0 +1,527 @@
+%%%%
+% MTecknology's Resume
+%%%%
+% Author: Michael Lustfield
+% License: CC-BY-4
+% - https://creativecommons.org/licenses/by/4.0/legalcode.txt
+%%%%
+
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEGIN_FILE: mteck.sty
+%% NOTE: Everything between here and END_FILE can
+%% be relocated to "mteck.sty" and then included with:
+%\usepackage{mteck}
+
+% Dependencies
+% NOTE: Some packages (lastpage, hyperref) require second build!
+\usepackage[top=0.45in,bottom=0.45in,left=0.55in,right=0.55in]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{bookmark}
+\usepackage{fontawesome5}
+
+% Sans-Serif
+%\usepackage[sfdefault]{FiraSans}
+%\usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+%\usepackage[default]{sourcesanspro}
+
+% Serif
+\usepackage{XCharter}
+
+% Colors
+% Use with \color{Name}
+% Can wrap entire heading with {\color{accent} [...] }
+\usepackage{xcolor}
+% \definecolor{accentTitle}{HTML}{0e6e55} xanh lá
+% \definecolor{accentText}{HTML}{0e6e55} xanh lá
+% \definecolor{accentLine}{HTML}{a16f0b}
+
+% \definecolor{accentTitle}{HTML}{5DADE2} % xanh dương nhạt
+% \definecolor{accentText}{HTML}{5DADE2} % xanh dương nhạt
+
+\definecolor{accentTitle}{HTML}{000000}
+\definecolor{accentText}{HTML}{000000}
+\definecolor{accentLine}{HTML}{174A7C}
+\definecolor{blue}{HTML}{174A7C}
+\definecolor{cvtextgray}{HTML}{6E6E6E}
+\newcommand{\smaller}{\small}
+\newcommand{\ContactItem}[3]{%
+  \href{#2}{\textcolor{black}{#1\hspace{0.25em}\textcolor{blue}{#3}}}}
+
+% Misc. Options
+\pagestyle{empty}
+\urlstyle{same}
+
+% Adjust Margins
+\setlength{\tabcolsep}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setstretch{0.97}
+\raggedbottom
+\raggedright
+\setlist[itemize]{leftmargin=1.2em,topsep=0.05em,itemsep=0.05em,parsep=0pt,partopsep=0pt}
+
+% ATS Readability
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%-----------------%
+% Custom Commands %
+%-----------------%
+
+% Centered title along with subtitle between HR
+% Usage: \documentTitle{Name}{Details}
+\newcommand{\documentTitle}[2]{
+  \begin{center}
+    {\fontsize{22}{26}\selectfont\bfseries\color{accentTitle} #1\par}
+    \vspace{0.25em}
+    {\small #2\par}
+    \vspace{0.3em}
+  \end{center}
+  \vspace{-0.5em}
+}
+
+% Create a footer with correct padding
+% Usage: \documentFooter{\thepage of X}
+\newcommand{\documentFooter}[1]{
+  \setlength{\footskip}{10.25pt}
+  \fancyfoot[C]{\footnotesize #1}
+}
+
+% Simple wrapper to set up page numbering
+% Usage: \numberedPages
+% WARNING: Must run pdflatex twice!
+\newcommand{\numberedPages}{
+  \documentFooter{\thepage/\pageref{LastPage}}
+}
+
+% Section heading with horizontal rule
+% Usage: \section{Title}
+\titleformat{\section}{
+  \color{accentText}
+  \raggedright\Large\bfseries
+}{}{0em}{}[\vspace{0.12em}\titlerule]
+\titlespacing*{\section}{0pt}{0.62em}{0.38em}
+
+% Section heading with separator and content on same line
+% Usage: \tinysection{Title}
+\newcommand{\tinysection}[1]{
+  \phantomsection
+  \addcontentsline{toc}{section}{#1}
+  {\large{\bfseries\color{accentText}#1} {\color{accentLine} |}}
+}
+
+% Indented line with arguments left/right aligned in document
+% Usage: \heading{Left}{Right}
+\newcommand{\heading}[2]{
+  \noindent#1\hfill{\color{cvtextgray}#2}\\
+}
+
+% Adds \textbf to \heading
+\newcommand{\headingBf}[2]{
+  \heading{\textbf{#1}}{\textbf{#2}}
+}
+
+% Adds \textit to \heading
+\newcommand{\headingIt}[2]{
+  \heading{\textit{#1}}{\textit{#2}}
+}
+
+% Template for itemized lists
+% Usage: \begin{resume_list} [items] \end{resume_list}
+\newenvironment{resume_list}{
+  \vspace{-3pt}
+  \begin{itemize}[itemsep=1pt, parsep=0pt, topsep=2pt, leftmargin=16pt]
+}{
+  \end{itemize}
+  %\vspace{-2pt}
+}
+
+% Formats an item to use as an itemized title
+% Usage: \itemTitle{Title}
+\newcommand{\itemTitle}[1]{
+  \item[] \underline{#1}\vspace{4pt}
+}
+
+% Bullets used in itemized lists
+\renewcommand\labelitemi{\textbullet}
+
+%% END_FILE: mteck.sty
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+%===================%
+% 's Resume %
+%===================%
+
+%\numberedPages % NOTE: lastpage requires a second build
+%\documentFooter{\thepage of 2} % Does similar without using lastpage
+\begin{document}
+
+  %---------%
+  % Heading %
+  %---------%
+
+  \documentTitle{Vu Thi Minh Thu}{
+    \vspace{0.35em}
+    {\centering\small
+    \ContactItem{\faPhone}{tel:+84986841162}{+84 986 841 162}
+    \hspace{0.75em}
+    \ContactItem{\faEnvelope}{mailto:vuthiminhthu04@gmail.com}{Email}
+    \hspace{0.75em}
+    \ContactItem{\faGlobe}{https://thiminhthuvu.github.io/}{Website}
+    \hspace{0.75em}
+    \ContactItem{\faGithub}{https://github.com/ThiMinhThuVu}{GitHub}
+    \hspace{0.75em}
+    \ContactItem{\faLinkedin}{https://www.linkedin.com/in/thu-thi-minh-vu/?}{LinkedIn}
+    \hspace{0.75em}
+    \ContactItem{\faGraduationCap}{https://scholar.google.com/citations?user=Zwbvyq0AAAAJ}{Google Scholar}
+    \par}
+  }
+
+  %---------%
+  % Summary %
+  %---------%
+\section{INTERESTS}
+% I am currently a fourth-year Computer Science student at the University of Engineering and Technology, Vietnam National University, Hanoi (UET–VNU). 
+% Authored and co-authored five international publications, demonstrating strong research capabilities.
+% My research focuses on advanced AI methods, particularly in Natural Language Processing and Large Language Models. 
+% Developed strong programming skills in Python and C++, with a solid foundation in Machine Learning, Deep Learning, and Natural Language Processing, specializing in LLMs, Graph Learning, and applications in Question Answering, Summarization, and Retrieval-Augmented Generation.
+
+% Computer Science graduate from the University of Engineering and Technology, Vietnam National University, Hanoi (UET–VNU). 
+% My research interests span Computer Vision and Natural Language Processing, with a current focus on Surgical Video Understanding, Visual Question Answering (VQA), Summarization and Graph Learning.
+% Strong background in Machine Learning, Natural Language Processing, Computer Vision, and LLMs, with programming experience in Python and C++.
+
+Medical AI $\cdot$ Surgical Video Understanding $\cdot$ Visual Question Answering $\cdot$ Graph Learning $\cdot$ Trustworthy AI
+% $\cdot$ Surgical Scene Graph $\cdot$ Anatomical Segmentation  | Trustworthy AI
+
+ \section{EDUCATION}
+
+  \headingBf{Vietnam National University, University of Engineering and Technology (\href{https://uet.vnu.edu.vn/en/}{\textcolor{blue}{UET}})}{Sep 2022 -- Jun 2026}
+  \headingIt{Bachelor's degree, Computer Science, GPA: 3.8/4.0 (Top 8\% of cohort)}{}
+
+\section{PUBLICATIONS}
+\begin{enumerate}[leftmargin=1.2em,label=\arabic*.,topsep=0pt,itemsep=0.08em,parsep=0pt,partopsep=0pt]
+\item Quoc-An Nguyen, \textbf{Thi-Minh-Thu Vu}, Bich-Dat Nguyen, Dinh-Quang-Minh Tran, Hoang-Quynh Le, ``Achieving Reliable Biomedical QA through Selective Multi-hop Reasoning and Contextual Evidence Retrieval,'' Accepted at \textit{Database (Oxford), The Journal of Biological Database and Curation 2026}. Q1, IF: 2.7.
+\item Quoc-An Nguyen, Xuan-Hung Le, \textbf{Thi-Minh-Thu Vu}, Hoang-Quynh Le, ``Beyond the Scientific Document: \\ A Citation-Aware Multi-Granular Summarization Approach with Heterogeneous Graphs,'' \textit{EMNLP 2025 Findings}. [\href{https://aclanthology.org/2025.findings-emnlp.269.pdf}{\textcolor{blue}{Paper}}]
+\item Quoc-An Nguyen, Xuan-Hung Le, \textbf{Thi-Minh-Thu Vu}, Hoang-Quynh Le, ``CiteArXiv: A Citation-Enriched Dataset and Heterogeneous Graph-based Model for Scientific Articles Summarization,'' \textit{The Web Conference (WWW) 2025}. [\href{https://dl.acm.org/doi/abs/10.1145/3701716.3735083}{\textcolor{blue}{Paper}}]
+\item Quoc-An Nguyen, \textbf{Thi-Minh-Thu Vu}, Bich-Dat Nguyen, Dinh-Quang-Minh Tran, Hoang-Quynh Le, ``UETQuintet at BioCreative IX – MedHopQA: Enhancing Biomedical QA with Selective Multi-hop Reasoning and Contextual Retrieval,'' \textit{BioCreative IX Workshop, International Joint Conference on Artificial Intelligence (IJCAI) 2025}. [\href{https://arxiv.org/pdf/2601.06974}{\textcolor{blue}{Paper}}]
+\item \textbf{Thi-Minh-Thu Vu}, Quoc-An Nguyen, Bich-Dat Nguyen, Dinh-Quang-Minh Tran, Hoang-Quynh Le, ``HERF: Hybrid Evidence Retrieval Framework for Entity-Centric Question Answering,'' \textit{International Symposium on Information and Communication Technology (SOICT) 2025}. [\href{https://link.springer.com/chapter/10.1007/978-981-92-2600-9_18}{\textcolor{blue}{Paper}}]
+\end{enumerate}
+    
+  %------------%
+  % Experience %
+  %------------%
+
+\section{RESEARCH EXPERIENCE}
+\headingBf{Research Assistant}{Jun 2026 -- Present}
+\headingIt{VinUni-Illinois Smart Health Center, VinUniversity}{}
+\begin{itemize}
+    \item Advisor: Dr. \href{https://huyhieupham.github.io/}{\textcolor{blue}{Huy-Hieu Pham}}.
+    \item Develop models for anatomical segmentation and surgical scene understanding from surgical videos.
+    \item Develop surgical scene graphs representing instruments, anatomy, actions, and their relationships for knowledge-enhanced visual question answering.
+\end{itemize}
+
+\headingBf{Research Associate}{Jun 2026 -- Present}
+\headingIt{\href{https://www.passiolab.com/}{\textcolor{blue}{PASSIO Lab}}, North Carolina A\&T State University, US}{}
+\begin{itemize}
+    \item Advisor: Dr. \href{https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi}{\textcolor{blue}{Phat K. Huynh}}.
+    \item Develop deep learning models for surgical phase recognition in cardiac surgery videos.
+    \item Investigate temporal modeling techniques to capture surgical workflow dynamics and improve phase recognition.
+\end{itemize}
+
+
+
+\headingBf{Research Assistant}{Sep 2023 -- Jun 2026}
+\headingIt{Data Science and Knowledge Technology Laboratory (DS\&KT Lab)}{}
+
+\begin{itemize}
+    \item Advisor: Dr. \href{https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi}{\textcolor{blue}{Hoang-Quynh Le}}.
+    \item Designed heterogeneous graphs for scientific document understanding and citation-aware summarization.
+    \item Built few-shot, retrieval-augmented pipelines for selective multi-hop reasoning over academic corpora and entity-centric biomedical QA, incorporating hybrid evidence retrieval.
+\end{itemize}
+
+\section{TEACHING EXPERIENCE}
+\headingBf{Teaching Assistant}{Jul 2026 -- Present}
+\headingIt{College of Engineering \& Computer Science, VinUniversity}{}
+\begin{itemize}
+    \item Instructor: Dr. \href{https://huyhieupham.github.io/}{\textcolor{blue}{Huy-Hieu Pham}}.
+    \item {IDEA1011SUM26}: Big Ideas: AI and Knowledge Revolution.
+    \item {COMP3040FAL26, COMP5030FAL26}: Computer Vision.
+\end{itemize}
+
+\section{INDUSTRY EXPERIENCE}
+\headingBf{AI Engineer Intern}{Oct 2025 -- Dec 2025}
+\headingIt{R\&D Department, MBBank}{}
+\begin{itemize}
+\item Developed an information retrieval module for enterprise question-answering and Text-to-SQL chatbots.
+\item Proposed schema graph-based retrieval and applied prompt engineering and entity extraction to improve query grounding and SQL generation while reducing LLM hallucinations.
+\end{itemize}
+% \begin{itemize}[label={\smaller$\diamond$}]
+%     \item Developed an information retrieval module for enterprise QA and Text-to-SQL chatbot systems.
+%     \item Proposed a schema graph--based approach to retrieve relevant database subgraphs prior to LLM-based SQL generation, improving query grounding and accuracy.
+%     \item Applied prompt engineering and entity extraction techniques to enhance query understanding and reduce hallucinations in LLM outputs.
+% \end{itemize}
+
+% \headingBf{CSC Distributor (\href{https://csc-jsc.com/}{\textcolor{blue}{CSC-JSC}})}{2025.02--2025.06}
+% \headingIt{AI Engineer Intern}{}
+
+% \begin{itemize}[label={\smaller$\diamond$}]
+%     \item Researched state-of-the-art \textbf{agent frameworks} for \textbf{multi-agent AI systems}.
+%     \item Applied \textbf{Docker} to containerize and deploy AI services.
+%     \item Explored the \textbf{Katonic MLOps platform} for model deployment and pipeline management.
+% \end{itemize}
+
+
+% \section{EXPERIENCE}
+% \headingBf{Data Science and Knowledge Technology Laboratory (\href{https://www.fit.uet.vnu.edu.vn/en/knowledge-technology-and-data-science-laboratory/}{\textcolor{blue} {DS\&KT Lab}})} {2023.09--Now}  \\ 
+
+% \headingIt{Research Student}{} 
+% Supervisor: Hoang-Quynh Le, Email: Google Scholar: https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi
+
+% \begin{itemize}[label={\smaller$\diamond$}]
+%     \item Engaged in research activities related to Data Science and Artificial Intelligence
+%     \item Conducted research in NLP, with a focus on Graph Learning and Information Retrieval.
+%     \item Collected, cleaned, and preprocessed datasets from multiple sources, and trained or fine-tuned AI models to improve performance on specific research tasks.
+% \end{itemize}
+
+% \headingBf{MBBank|R\&D Department (\href{https://www.mbbank.com.vn/?lang=EN}{\textcolor{blue} {AI Research and Application Development}})}{2025.10--Now}
+% \headingIt{AI Engineer Intern}{} 
+% \begin{itemize}[label={\smaller$\diamond$}]
+% \item Focused on the information retrieval module and Text2SQL chatbot system.
+% \item Proposed and implemented a schema graph–based approach to identify relevant subgraphs for a given query before using an LLM to generate SQL queries.
+% \item Applied prompting techniques to extract entities and improve query understanding.
+% \end{itemize}
+
+% làm tại phòng R&D nghiên cứu và phát triển ứng dụng AI.
+% tại đây tôi làm về module truy xuất thông tin. Phát triển hệ thống chatbot Text2SQL, tôi đề xuất ý tưởng và thực hiện sử dụng schema graph để tìm ra subgraph phù hợp với query input rồi mới sử dụng LLM để sinh SQL.
+
+% \headingBf{CSC Distributor (\href{https://csc-jsc.com/}{\textcolor{blue} {CSC-JSC}})}{2025.02--2025.06}
+% \headingIt{AI Engineer Intern}{} 
+% \begin{itemize}[label={\smaller$\diamond$}]
+%     % \item Contributed to the development of \textbf{BlogGenius: Multi-AI Agents for Content Creation} (2 members), implementing and testing agents such as Outline Generator, Retrieval Agent, and Content Generator
+%     \item Researched state-of-the-art agent frameworks for multi-agent AI systems. 
+%     \item Applied Docker to containerize and deploy services.
+%     \item Explored the Katonic MLOps platform for model deployment and pipeline management.
+% \end{itemize}
+
+% Scholarships
+\section{AWARDS \& SCHOLARSHIPS}
+
+\textbf{Awards}
+\begin{itemize}[label={\smaller$\bullet$}]
+    \item \headingBf{Outstanding Undergraduate Thesis}{2026}
+    \headingIt{Ranked 1st in the thesis evaluation committee with a score of 9.7/10.}{}
+
+    \item \headingBf{Third Prize -- TIGER SQ-AI Challenge @ MICCAI 2026}{2026}
+    \headingIt{Ranked 3rd in the Biomedical Image Segmentation task.}{}
+
+    \item \headingBf{6th Place -- FOMO26: The Foundation Model Challenge for Brain MRI @ MICCAI 2026}{2026}
+    \headingIt{Ranked 6th among 33 participating teams.}{}
+
+    % \item \headingBf{Second Prize -- NUS Young Fellowship Programme Poster Competition @ Singapore}{2026}
+    % \headingIt{Awarded during a one-month fellowship programme on Artificial Intelligence at the National University of Singapore.}{}
+    \item \headingBf{Second Prize -- NUS Young Fellowship Poster Competition}{2026}
+\headingIt{Ranked 2nd in the research poster competition at the National University of Singapore.}{}
+
+    \item \headingBf{Second Prizes -- Undergraduate Scientific Research Conference @ UET}{2026}
+
+    \item \headingBf{Second Prize -- BioCreative IX @ IJCAI 2025 (Track 1: MedHopQA)}{2025}
+    \headingIt{International competition on Large Language Models for Clinical and Biomedical NLP.}{}
+
+    \item \headingBf{Third Prize -- Undergraduate Scientific Research Conference @ FIT-UET}{2025}
+
+    % \item \headingBf{Outstanding Young Representative}{2025}
+
+    \item \headingBf{Student of 5 Good Merits Award @ UET}{2025}
+\end{itemize}
+
+\textbf{Fellowships \& Scholarships}
+\begin{itemize}[label={\smaller$\bullet$}]
+
+    \item \headingBf{NUS Young Fellowship Programme}{2026}
+    \headingIt{Selected for a funded one-month fellowship programme in AI at the National University of Singapore.}{}
+
+    \item \headingBf{Vingroup Talent Scholarship}{2023--2026}
+    \headingIt{Awarded to three outstanding students at UET for excellence in academic performance and research achievements.}{}
+
+    \item \headingBf{UET Annual Scholarship for Outstanding Students}{2023--2026}
+    \headingIt{Awarded to the top 8\% of students with the highest GPA.}{}
+
+    \item \headingBf{Dong Hanh Scholarship}{2023}
+    \headingIt{Awarded to students demonstrating strong academic performance, determination, and perseverance.}{}
+\end{itemize}
+
+% \section{AWARDS}
+% \begin{itemize}[label={\smaller$\bullet$}]
+%     \item \headingBf{Outstanding Undergraduate Thesis}{2026} \\
+%     \headingIt{Ranked 1st in the thesis evaluation committee with a score of 9.7/10.}{}
+
+%     \item \headingBf{Second Prize - NUS Young Fellowship Programme Poster Competition}{2026} \\
+%     \headingIt{Awarded during a one-month fellowship programme on Artificial Intelligence at the National University of Singapore.}{} \\
+    
+%     % \item \headingBf{Two Second Prizes in the Undergraduate Scientific Research Conference, FIT-UET \href{https://www.fit.uet.vnu.edu.vn/en/}{\textcolor{blue}}}{2026}
+%     \item \headingBf{Second Prizes in the Undergraduate Scientific Research Conference, UET \href{https://www.fit.uet.vnu.edu.vn/en/}{\textcolor{blue}}}{2026}
+    
+%     % \headingIt{International competition on Large Language Models for Clinical and Biomedical NLP.}{}
+
+%    \item \headingBf{Vingroup Talent Scholarship}{2023-2026} \\ 
+%     \headingIt{Awarded to three outstanding students at UET for their excellence in academic performance and research achievement.}{}
+    
+%    \item \headingBf{UET Annual Scholarship for Outstanding Students}{2023-2026} \\ 
+%     \headingIt{Awarded to the top 8\% of students with the highest GPA.}{}  
+
+%     \item \headingBf{Second Prizes – BioCreative IX @ IJCAI-2025 (\href{https://www.ncbi.nlm.nih.gov/research/bionlp/biocreative9}{\textcolor{blue} {Track 1: MedHopQA}})}{2025} \\
+    
+
+%     \item \headingBf{Third Prize in the Undergraduate Scientific Research Conference, FIT-UET \href{https://www.fit.uet.vnu.edu.vn/en/}{\textcolor{blue}}} {2025}
+    
+%     \item \headingBf{Outstanding Young Representative}{2025}\\
+%     \item \headingBf{Award for Student of 5 Merits}{2025} \\
+
+%     % \item \headingBf{Illuminating the Talent of the Digital Generation}{2023} \\
+%     % \headingIt{Granted by LAZADA to 30 students in UET}{}
+    
+%     \item \headingBf{Dong Hanh Scholarship}{2023} \\ 
+%     \headingIt{Association in France helping exceptional students who demonstrate strong determination and perseverance in life.}{}
+% \end{itemize}
+
+% \section{SCHOLARSHIPS}
+% \begin{itemize}[label={\smaller$\bullet$}]
+%  \item \headingBf{UET Annual Scholarship for Outstanding Students}{2023, 2025} \\ 
+%     \headingIt{Awarded to the top 8\% of students with the highest GPA.}{}
+    
+%     \item \headingBf{Vingroup Talent Scholarship}{2023-2025} \\ 
+%     \headingIt{Awarded to three outstanding students at UET for their excellence in academic performance and research achievement.}{}
+    
+%     % \item \headingBf{Illuminating the Talent of the Digital Generation}{2023} \\
+%     % \headingIt{Granted by LAZADA to 30 students in UET}{}
+    
+%     \item \headingBf{Dong Hanh Scholarship}{2023} \\ 
+%     \headingIt{Association in France helping exceptional students who demonstrate strong determination and perseverance in life.}{}
+% \end{itemize}
+
+
+  %--------%
+  % Skills %
+  %--------%
+  % \newpage
+
+% \section{SKILLS}
+% \begin{itemize}[label={\smaller$\bullet$}]
+%     \item \textbf{Languages:} Python, C++
+%     \item \textbf{Python Packages:} PyTorch, Transformers, SpaCy, Scikit-learn, NumPy, Pandas
+%     % \item \textbf{Database:} Milvus, MySQL, PosgreSQL
+%     % \item \textbf{Development \& Deployment:} Git, Docker, MLflow
+% \end{itemize}
+
+
+% \begin{multicols}{2}
+% \begin{itemize}[label={\smaller$\bullet$}]
+%     \item \textbf{Languages:} Python, C++
+%     \item \textbf{Python Packages:} PyTorch, Transformers, SpaCy, Scikit-learn, NumPy, Pandas, Sentence-Transformers
+%     \item \textbf{Database:} Milvus, MySQL, PostgreSQL, Redis
+%     \item \textbf{Development \& Deployment:} Git, Docker, MLflow
+% \end{itemize}
+% \end{multicols}
+
+
+
+
+% % Certifications
+% \vspace{5pt}
+% \section{CERTIFICATIONS}
+
+% \begin{itemize}[label={\smaller$\bullet$}]
+%     \item \headingBf{AI Singapore (\href{https://aisingapore.org/}{\textcolor{blue} {National AI program supported by the Government of Singapore}})} {2025}
+%     \begin{itemize}[label={\smaller$\diamond$}]
+%         \item National AI Student Challenge 2025 - AWS Regional LLM League}
+%     \end{itemize}
+
+%      \item \headingBf{KEPCO KDN – VNU–UET Collaboration Program}{2023-2024}
+%     \begin{itemize}[label={\smaller$\diamond$}]
+%         \item Generative Artificial Intelligence and Applications - \textit{Ranked in the Top 5 Courses}
+%         \item Large Language Model
+%     \end{itemize}
+    
+%     \item \headingBf{Coursera}{2023-2024}
+%     \begin{itemize}[label={\smaller$\diamond$}]
+%         \item Natural Language Processing with Probabilistic Models
+%         \item Natural Language Processing with Classification and Vector Space
+%         \item Supervised Machine Learning: Regression and Classification
+%         \item Advanced Learning Algorithms
+%     \end{itemize}
+% \end{itemize}
+
+% Certifications
+\section{CERTIFICATIONS}
+
+\begin{itemize}[label={\smaller$\bullet$}]
+
+    \item \headingBf{Aptis ESOL B2 (British Council)}{2026}
+    \begin{itemize}[label={\smaller$\diamond$}]
+        \item English proficiency certification at CEFR B2 level issued by the British Council Aptis system.
+    \end{itemize}
+
+    \item \headingBf{National AI Student Challenge 2025 - AWS Regional LLM League}{2025}
+    \begin{itemize}[label={\smaller$\diamond$}]
+        \item AI competition organized by \href{https://certificates.aisingapore.org/certificate-verification/36D9BC9-36D9BC4-35E0C2E/}{\textcolor{blue}{AI Singapore}}, with support from the Singapore Government.
+        % National AI program
+    \end{itemize}
+
+    \item \headingBf{Generative Artificial Intelligence and Applications}{2024}
+    \begin{itemize}[label={\smaller$\diamond$}]
+        \item Achieved 1st place in a course jointly organized by KEPCO KDN and VNU–UET.
+    \end{itemize}
+
+\end{itemize}
+
+  %----------------------------%
+  % Extracurricular Activities %
+  %----------------------------%
+
+ \section{PROJECTS}
+
+\begin{itemize}[label={\smaller$\bullet$}]
+ \item \headingBf{Chain-of-Evidence Reasoning for Biomedical QA with Selective Decomposition and Multi-Source Retrieval}{2026}
+    \begin{itemize}[label={\smaller$\diamond$}] 
+    % \item Developed a selective multi-hop reasoning framework for complex biomedical question answering, achieving 2nd place on the BioCreative IX MedHopQA leaderboard with an Exact Match (EM) score of 0.84. 
+    
+    \item Implemented question decomposition using In-Context Learning to break down complex queries into sub-questions, improving accuracy by 26\% over standard baselines with an Exact Match score of 0.85.
+
+    \item Integrated a hybrid retrieval system using BM25 and MedCPT to fetch contextual evidence from large-scale biomedical corpora (PubMed), ensuring evidence-grounded answer generation. 
+    \item Technologies: Python, PyTorch, Large Language Models, Scikit Learn. 
+    \item Role: Designed the multi-hop reasoning logic; implemented the question decomposition pipeline; optimized retrieval-augmented generation to mitigate hallucinations in medical contexts. 
+    \end{itemize}
+
+    % \item \headingBf{Graph-Based Scientific Summarization}{2025}
+    % \begin{itemize}[label={\smaller$\diamond$}]
+    %     \item Achieved state-of-the-art (SOTA) performance on the CL-Scisum benchmark, with average improvements of +2.3\% ROUGE-1, +4.1\% ROUGE-2, and +4.01\% ROUGE-L over the previous best model (CHANGES).
+    %     \item Technologies: PyTorch, matrix-based GAT, Contrastive Learning, SciBERT Embedding.
+    %     \item Role: Designed and implemented matrix-based graph construction and adjacency generation; integrated the GAT encoder; trained and evaluated the model on benchmark datasets.
+    % \end{itemize}
+    
+\end{itemize}
+
+\section{REFERENCES}
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Supervisor: Dr. Hoang-Quynh Le}\\
+\href{mailto:lhquynh@vnu.edu.vn}{\textcolor{blue}{\faEnvelope\hspace{0.25em}lhquynh@vnu.edu.vn}}\\
+\href{tel:+84 945 885 500}{\textcolor{blue}{\faPhone\hspace{0.25em}(+84) 945 885 500}}
+% website: https://uet.vnu.edu.vn/~lhquynh/ 
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\textbf{Supervisor: Dr. Huy-Hieu Pham}\\
+\href{mailto:hieu.ph@vinuni.edu.vn}{\textcolor{blue}{\faEnvelope\hspace{0.25em}hieu.ph@vinuni.edu.vn}}\\
+\href{tel:+84854866888}{\textcolor{blue}{\faPhone\hspace{0.25em}(+84) 854866888}}
+\end{minipage}
+
+    
+\end{document}

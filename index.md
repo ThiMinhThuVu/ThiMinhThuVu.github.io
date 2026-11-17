@@ -23,7 +23,7 @@ I am particularly interested in systems that answer not only “What does the mo
 
 ## Education
 
-**B.Sc. in Computer Science**, [Vietnam National University, University of Engineering and Technology (VNU-UET)](https://uet.vnu.edu.vn/en/), Sep. 2022–Jun. 2026. GPA: **3.8/4.0**, top 8% of cohort.
+[2022.09 - 2026.06] **B.Sc. in Computer Science**, [Vietnam National University, University of Engineering and Technology (VNU-UET)](https://uet.vnu.edu.vn/en/). GPA: **3.8/4.0**, top 8% of cohort.
 
 ## Publications
 
@@ -33,11 +33,13 @@ I am particularly interested in systems that answer not only “What does the mo
 
 ### Research Experience
 
-- **Research Assistant — VinUni-Illinois Smart Health Center, VinUniversity** (Jun. 2026–present). Advised by Dr. [Huy-Hieu Pham](https://huyhieupham.github.io/). Anatomical segmentation, surgical scene understanding, and scene graphs for knowledge-enhanced visual question answering.
-- **Research Associate — [PASSIO Lab](https://www.passiolab.com/), North Carolina A&T State University** (Jun. 2026–present). Advised by Dr. [Phat K. Huynh](https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi). Deep learning and temporal modeling for phase recognition in cardiac surgery videos.
-- **Research Assistant — Data Science and Knowledge Technology Laboratory** (Sep. 2023–Jun. 2026). Advised by Dr. [Hoang-Quynh Le](https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi). Heterogeneous graphs for citation-aware summarization and retrieval-augmented pipelines for multi-hop biomedical question answering.
+- [2026.06 - present] **Research Assistant — VinUni-Illinois Smart Health Center, VinUniversity**. Advised by Dr. [Huy-Hieu Pham](https://huyhieupham.github.io/). Anatomical segmentation, surgical scene understanding, and scene graphs for knowledge-enhanced visual question answering.
+- [2026.06 - present] **Research Associate — [PASSIO Lab](https://www.passiolab.com/), North Carolina A&T State University**. Advised by Dr. [Phat K. Huynh](https://scholar.google.com/citations?user=Wo5c6BEAAAAJ&hl=vi). Deep learning and temporal modeling for phase recognition in cardiac surgery videos.
+- [2023.09 - 2026.06] **Research Assistant — Data Science and Knowledge Technology Laboratory**. Advised by Dr. [Hoang-Quynh Le](https://scholar.google.com/citations?user=LBYOZ00AAAAJ&hl=vi). Heterogeneous graphs for citation-aware summarization and retrieval-augmented pipelines for multi-hop biomedical question answering.
 
 ### Teaching Experience
+
+[2026.07 - present] **Teaching Assistant — College of Engineering & Computer Science, VinUniversity.**
 
 {% for item in site.data.teaching %}
 <div class="teaching-entry">
@@ -47,7 +49,7 @@ I am particularly interested in systems that answer not only “What does the mo
 
 ### Industry Experience
 
-**AI Engineer Intern — R&D Department, MBBank** (Oct.–Dec. 2025). Developed information retrieval for enterprise question-answering and Text-to-SQL chatbots, including schema graph retrieval, prompt engineering, and entity extraction.
+[2025.10 - 2025.12] **AI Engineer Intern — R&D Department, MBBank**. Developed information retrieval for enterprise question-answering and Text-to-SQL chatbots, including schema graph retrieval, prompt engineering, and entity extraction.
 
 ## Honors and Awards
 
