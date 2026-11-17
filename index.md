@@ -25,6 +25,14 @@ I am particularly interested in systems that answer not only “What does the mo
 
 [2022.09 - 2026.06] **B.Sc. in Computer Science**, [Vietnam National University, University of Engineering and Technology (VNU-UET)](https://uet.vnu.edu.vn/en/). GPA: **3.8/4.0**, top 8% of cohort.
 
+<h2 id="news">🔥 News</h2>
+
+<ul class="news-list">
+{% for item in site.data.news %}
+  <li><span aria-hidden="true">{{ item.icon }}</span> <strong>{{ item.date }}:</strong> {{ item.text }}</li>
+{% endfor %}
+</ul>
+
 ## Publications
 
 {% include publication-list.html %}
@@ -68,11 +76,3 @@ I am particularly interested in systems that answer not only “What does the mo
 - [2023–2026] **Vingroup Talent Scholarship.** Awarded to three outstanding students at UET for excellence in academic performance and research achievements.
 - [2023–2026] **UET Annual Scholarship for Outstanding Students.** Awarded to the top 8% of students with the highest GPA.
 - [2023] **Dong Hanh Scholarship.** Awarded to students demonstrating strong academic performance, determination, and perseverance.
-
-## 🔥 News
-
-<ul class="news-list">
-{% for item in site.data.news %}
-  <li><span aria-hidden="true">{{ item.icon }}</span> <strong>{{ item.date }}:</strong> {{ item.text }}</li>
-{% endfor %}
-</ul>
