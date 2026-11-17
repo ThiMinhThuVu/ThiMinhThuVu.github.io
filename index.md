@@ -67,10 +67,10 @@ I am particularly interested in systems that answer not only “What does the mo
 - [2023–2026] **UET Annual Scholarship for Outstanding Students.** Awarded to the top 8% of students with the highest GPA.
 - [2023] **Dong Hanh Scholarship.** Awarded to students demonstrating strong academic performance, determination, and perseverance.
 
-## News
+## 🔥 News
 
 <ul class="news-list">
 {% for item in site.data.news %}
-  <li><strong>[{{ item.date }}]</strong> {{ item.text }}</li>
+  <li><span aria-hidden="true">{{ item.icon }}</span> <strong>{{ item.date }}:</strong> {{ item.text }}</li>
 {% endfor %}
 </ul>
