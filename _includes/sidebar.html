@@ -19,7 +19,13 @@
   <h1 class="profile-name">{{ p.name }}</h1>
 
   <p class="profile-role">
-    {{ p.title }}
+    {% if p.roles %}
+      {% for role in p.roles %}
+        {{ role | escape }}{% unless forloop.last %}<br>{% endunless %}
+      {% endfor %}
+    {% else %}
+      {{ p.title }}
+    {% endif %}
   </p>
 
   <div class="profile-info">
