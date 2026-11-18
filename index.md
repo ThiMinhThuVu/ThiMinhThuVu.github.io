@@ -42,7 +42,7 @@ GPA: **3.8/4.0**, top 8% of cohort.
 
 ### Research Experience
 
-- [2026.06 - Present] **Research Assistant — VinUni-Illinois Smart Health Center, VinUniversity**<br>
+- [2026.06 - Present] **Research Assistant — [CVMAIL Lab](https://cvlab.vinuni.edu.vn/), VinUni-Illinois Smart Health Center, VinUniversity**<br>
   ◦ Advised by Dr. [Huy-Hieu Pham](https://huyhieupham.github.io/).<br>
   ◦ Anatomical segmentation, surgical scene understanding, and scene graphs for knowledge-enhanced visual question answering.
 - [2026.06 - Present] **Research Associate — [PASSIO Lab](https://www.passiolab.com/), North Carolina A&T State University, USA**<br>
@@ -75,7 +75,7 @@ GPA: **3.8/4.0**, top 8% of cohort.
 - [2026] **Third Prize, TIGER SQ-AI Challenge at MICCAI.** Ranked 3rd in the Biomedical Image Segmentation task.
 - [2026] **6th Place, FOMO26: The Foundation Model Challenge for Brain MRI at MICCAI.** Ranked 6th among 33 participating teams.
 - [2026] **Second Prize, NUS Young Fellowship Poster Competition.** Ranked 2nd in the research poster competition at the National University of Singapore.
-- [2026] **Second Prizes, Undergraduate Scientific Research Conference at UET.**
+- [2026] **Second Prize, Undergraduate Scientific Research Conference at UET.**
 - [2025] **Second Prize, BioCreative IX at IJCAI, Track 1: MedHopQA.** International competition on Large Language Models for Clinical and Biomedical NLP.
 - [2025] **Third Prize, Undergraduate Scientific Research Conference at FIT-UET.**
 - [2025] **Student of 5 Good Merits Award, UET.**
