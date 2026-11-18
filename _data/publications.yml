@@ -1,4 +1,5 @@
 - year: 2026
+  equal_contribution: false
   title: "Achieving Reliable Biomedical QA through Selective Multi-hop Reasoning and Contextual Evidence Retrieval"
   authors_before: "QA Nguyen, "
   authors_after: ", BD Nguyen, DQM Tran, HQ Le"
@@ -8,17 +9,19 @@
   code: ""
   bibtex: ""
 - year: 2026
+  equal_contribution: true
   title: "UETQuintet at BioCreative IX--MedHopQA: Enhancing Biomedical QA with Selective Multi-hop Reasoning and Contextual Retrieval"
   authors_before: "QA Nguyen, "
-  authors_after: ", BD Nguyen, DQM Tran, HQ Le"
+  authors_after: ", BD Nguyen*, DQM Tran*, HQ Le"
   venue: "Proceedings of the BioCreative IX Challenge and Workshop (BC9): Large Language Models for Clinical and Biomedical NLP at the International Joint Conference on Artificial Intelligence (IJCAI)"
   arxiv: "https://arxiv.org/abs/2601.06974"
   paper: ""
   code: ""
   bibtex: ""
 - year: 2025
+  equal_contribution: true
   title: "Beyond the Scientific Document: A Citation-Aware Multi-Granular Summarization Approach with Heterogeneous Graphs"
-  authors_before: "QA Nguyen, XH Le, "
+  authors_before: "QA Nguyen, XH Le*, "
   authors_after: ", HQ Le"
   venue: "Findings of the Association for Computational Linguistics: EMNLP 2025, 5034–5046"
   arxiv: ""
@@ -26,8 +29,9 @@
   code: ""
   bibtex: ""
 - year: 2025
+  equal_contribution: true
   title: "CiteArXiv: A Citation-enriched Dataset and Heterogeneous Graph-based Model for Scientific Articles Summarization"
-  authors_before: "QA Nguyen, XH Le, "
+  authors_before: "QA Nguyen, XH Le*, "
   authors_after: ", HQ Le"
   venue: "Companion Proceedings of the ACM on Web Conference 2025, 3084–3087"
   arxiv: ""
@@ -35,9 +39,10 @@
   code: ""
   bibtex: ""
 - year: 2025
+  equal_contribution: true
   title: "HERF: Hybrid Evidence Retrieval Framework for Entity-Centric Question Answering"
   authors_before: ""
-  authors_after: ", QA Nguyen, BD Nguyen, DQM Tran, HQ Le"
+  authors_after: ", QA Nguyen*, BD Nguyen, DQM Tran, HQ Le"
   venue: "International Symposium on Information and Communication Technology, 233–246"
   arxiv: ""
   paper: "https://link.springer.com/chapter/10.1007/978-981-92-2600-9_18"

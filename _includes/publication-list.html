@@ -1,8 +1,9 @@
+<p class="contribution-note">* Equal contribution.</p>
 <div class="publication-list">
   {% for publication in site.data.publications %}
     <article class="publication">
       <h3><span class="publication-date">[{{ publication.year }}]</span> {{ publication.title }}</h3>
-      <p class="authors">{{ publication.authors_before }}<strong>TMT Vu</strong>{{ publication.authors_after }}.</p>
+      <p class="authors">{{ publication.authors_before }}<strong>TMT Vu{% if publication.equal_contribution %}*{% endif %}</strong>{{ publication.authors_after }}.</p>
       <p class="venue">{{ publication.venue }}.</p>
       {% if publication.paper != "" or publication.arxiv != "" or publication.code != "" or publication.bibtex != "" %}
       <div class="publication-links">
