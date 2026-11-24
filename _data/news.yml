@@ -13,11 +13,11 @@
 
 - date: "2026.08"
   icon: "🏅"
-  text: "UET Annual Scholarship for Outstanding Final-Year Students."
+  text: "Vingroup Talent Scholarship – Academic Year 2025–2026."
 
 - date: "2026.07"
   icon: "🏅"
-  text: "Vingroup Talent Scholarship – Academic Year 2025–2026."
+  text: "UET Annual Scholarship for Outstanding Final-Year Students."
 
 
 - date: "2026.06"
@@ -31,6 +31,14 @@
 - date: "2026.04"
   icon: "🥈"
   text: "Second Prize – Undergraduate Scientific Research Conference, VNU-UET."
+
+- date: "2026.03"
+  icon: "🌏"
+  text: "Selected for the 2026 NUS Young Fellowship Programme."
+
+- date: "2025.12"
+  icon: "🏅"
+  text: "UET Scholarship for Outstanding Students."
 
 - date: "2025.11"
   icon: "🏅"
@@ -55,6 +63,10 @@
 - date: "2025.06"
   icon: "🥈"
   text: "Second Prize – BioCreative IX MedHopQA Challenge (Track 1), IJCAI 2025."
+
+- date: "2025.05"
+  icon: "🏅"
+  text: "Vingroup Talent Scholarship – Academic Year 2024–2025."
 
 - date: "2025.03"
   icon: "📝"
